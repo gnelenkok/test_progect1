@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F4F4F4;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    width: 870px;
+}
+.sidebar {
+    width: 270px;
+}
