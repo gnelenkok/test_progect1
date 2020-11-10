@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background-color: #F4F4F4;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -22,4 +23,108 @@ body {
 }
 .sidebar {
     width: 270px;
+}
+
+.cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-holder > .card_link {
+    margin-bottom: 30px;
+}
+
+/* Card */
+
+.card_link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card{
+    position: relative;
+    width: 270px;
+    background-color: #fff;
+}
+
+.card__badges {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+}
+
+.card__badges > * + * {
+    margin-left: 10px;
+}
+
+.card__badge {
+    display: inline-block;
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+}
+
+.card__badge--class {
+    background: #FFCF26;
+}
+
+.card__badge--credit {
+    background: #11BE75;
+    color: #fff;
+}
+
+.card__img {
+    display: block;
+}
+
+.card__content {
+    padding: 13px 15px 20px;
+}
+
+.card__title {
+    margin: 0;
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000;
+}
+
+.card__term {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000;
+
+}
+
+.card__metro {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000;
+}
+
+.card__metro::before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 16px;
+    height: 11px;
+    background-image: url('./../img/icons/metro.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.card_addres {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #777;
 }
